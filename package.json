@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "exceptions definitions used all across framework modules",
   "main": "lib/index.js",
+  "private": false,
   "scripts": {
     "test": "ts-mocha -p tsconfig.json test/**/*.test.ts",
     "coverage": "nyc npm run test",
@@ -35,8 +36,7 @@
     "url": "https://github.com/spinajs/exceptions/issues"
   },
   "homepage": "https://github.com/spinajs/exceptions#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/bunyan": "^1.8.6",
     "@types/chai": "^4.1.7",
