@@ -12,6 +12,11 @@ export class Exception extends Error {
 }
 
 /**
+ * Exception thrown when functionality is not supported
+ */
+export class NotSupportedException extends Exception {}
+
+/**
  * Exception thrown when argument passed to function is invalid eg. out of range
  */
 export class ArgumentException extends Exception {}
