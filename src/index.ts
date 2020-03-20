@@ -14,58 +14,58 @@ export class Exception extends Error {
 /**
  * Exception thrown when functionality is not supported
  */
-export class NotSupportedException extends Exception {}
+export class NotSupported extends Exception {}
 
 /**
  * Exception thrown when argument passed to function is invalid eg. out of range
  */
-export class ArgumentException extends Exception {}
+export class InvalidArgument extends Exception {}
 
 /**
  * The exception that is thrown when a method call is invalid for the object's current state.
  */
-export class InvalidOperationException extends Exception {}
+export class InvalidOperation extends Exception {}
 
 /**
  * Exception is thrown when authentication fails eg. user credentials are invalid
  */
-export class AuthenticationException extends Exception {}
+export class AuthenticationFailed extends Exception {}
 
 /**
  * Exception is thrown when request data are invalid
  */
-export class BadRequestException extends Exception {}
+export class BadRequest extends Exception {}
 
 /**
  * Exception indicating that an access to resource by a client has been forbidden by the server
  * HTTP 403 - Forbidden
  */
-export class ForbiddenException extends Exception {}
+export class Forbidden extends Exception {}
 
 /**
  * Exception thrown when there was error with IO operations ie. not accessible file
  */
-export class IOException extends Exception {}
+export class IOFail extends Exception {}
 
 /**
  * The exception that is thrown when resource is not found eg. model in database or missing file
  */
-export class NotFoundException extends Exception {}
+export class ResourceNotFound extends Exception {}
 
 /**
  * The exception that is thrown when method is not implemented
  */
-export class NotImplementedException extends Exception {}
+export class MethodNotImplemented extends Exception {}
 
 /**
  * The exception that is thrown when strange things happends in server eg. generic server error
  */
-export class ServerErrorException extends Exception {}
+export class UnexpectedServerError extends Exception {}
 
 /**
  * The exception that is thrown when JSON entity is checked against schema and is invalid
  */
-export class ValidationException extends Exception {
+export class ValidationFailed extends Exception {
   public Errors: any;
 
   constructor(message: string, validationErrors: any) {
@@ -78,11 +78,11 @@ export class ValidationException extends Exception {
 /**
  * The exception that is thrown when JSON entity is checked against schema and is invalid
  */
-export class NotAcceptedException extends Exception {}
+export class JsonValidationFailed extends Exception {}
 
 /**
  * The exception that is thrown if app not supports requestes `Accept` header eg. if client wants
  * html response but server can send only json.
  */
-export class NotAcceptableException extends Exception {}
+export class ExpectedResponseUnacceptable extends Exception {}
  
