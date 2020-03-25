@@ -85,4 +85,3 @@ export class JsonValidationFailed extends Exception {}
  * html response but server can send only json.
  */
 export class ExpectedResponseUnacceptable extends Exception {}
- 
