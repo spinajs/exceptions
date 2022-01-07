@@ -68,17 +68,6 @@ export class UnexpectedServerError extends Exception {}
  */
 export class ResourceDuplicated extends Exception {}
 
-/**
- * The exception that is thrown when JSON entity is checked against schema and is invalid
- */
-export class ValidationFailed extends Exception {
-  public parameter: any;
-
-  constructor(message: string, validationErrors: any) {
-    super(message);
-    this.parameter = validationErrors;
-  }
-}
 
 /**
  * The exception that is thrown when JSON entity is checked against schema and is invalid
