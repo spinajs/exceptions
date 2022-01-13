@@ -22,6 +22,11 @@ export class NotSupported extends Exception {}
 export class InvalidArgument extends Exception {}
 
 /**
+ * Exception thrown when config option is invalidl eg. missing or in invalid format
+ */
+export class InvalidOption extends Exception {}
+
+/**
  * The exception that is thrown when a method call is invalid for the object's current state.
  */
 export class InvalidOperation extends Exception {}
